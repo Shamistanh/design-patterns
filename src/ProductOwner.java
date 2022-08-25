@@ -1,4 +1,4 @@
-public abstract class Employee {
+public abstract class ProductOwner {
     double salary;
 
 

@@ -1,4 +1,4 @@
-public class SrEmployee extends Employee{
+public class SrDeveloper extends Developer {
 
     @Override
     public double getSalary() {
