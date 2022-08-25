@@ -1,9 +1,14 @@
 public class app {
     public static void main(String[] args) {
-        EmployeeFactory employeeFactory = new EmployeeFactory();
+        EmployeeBuilder employeeBuilder = new EmployeeBuilder();
 
-        Employee m = employeeFactory.getEmployee("J");
+        Employee john = employeeBuilder.name("John").salary(2300).id(5).build();
 
-        System.out.println(m.getSalary());
+        System.out.println(john);
+
+        Employee mark = employeeBuilder.name("Mark").salary(4300).id(3).experienceInMonth(120).build();
+        System.out.println(mark);
+
+
     }
 }
